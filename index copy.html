@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="STDArm: Transfer Visuomotor Policy From Static Data Training to Dynamic Robot Manipulation">
+    <meta name="keywords" content="Mobile Manipulation; Aerial Manipulation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      STDArm: Transfer Visuomotor Policy From Static Data Training to Dynamic Robot Manipulation
+    </title>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-GF0QZBTPS3');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+    <section class="hero is-light is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">STDArm: Transfer Visuomotor Policy From Static Data Training to Dynamic Robot Manipulation</h1>
+                        <div class="is-size-5 publication-authors">
+                          <!-- Paper authors -->
+                          <span class="author-block">
+                            <a href="https://yjsx.top" target="_blank">Yifan Duan</a><sup>*</sup>,</span>
+                          <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=OvgPvP0AAAAJ" target="_blank">Heng Li</a><sup>*</sup>,</span>
+                          <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=uoedFW8AAAAJ" target="_blank">Yilong Wu</a><sup>*</sup>,</span>
+                          <span class="author-block">
+                            <a href="https://wenhaoyu1998.github.io/" target="_blank">Yuwen Hao</a>,</span>
+                          <span class="author-block">
+                            <a href="https://xinranz-ustc.github.io/" target="_blank">Xinran Zhang</a>,</span>
+                          <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=LU2N-TAAAAAJ" target="_blank">Yedong Shen</a>,</span>
+                            <br>
+                          <span class="author-block">
+                            <a href="https://saids.ustc.edu.cn/2025/0319/c36359a677387/page.htm" target="_blank">Wuyang Zhang</a>,</span>
+                          <span class="author-block">
+                            <a href="http://staff.ustc.edu.cn/~jianmin/" target="_blank">Jianmin Ji</a>,</span>
+                          <span class="author-block">
+                            <a href="http://staff.ustc.edu.cn/~yanyongz/" target="_blank">Yanyong Zhang</a><sup>†</sup></span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>*</sup> Equal contribution</span>
+                            <span class="author-block"><sup>+</sup> Equal advising</span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">University of Science and Technology of China (USTC)</span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><strong>Robotics: Science and Systems (RSS) 2025</strong></span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="xxx" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper(Coming soon)</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/xxx"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv(Coming soon)</span>
+                                    </a>
+                                </span>
+                                <!-- Video Link. -->
+                                <!-- <span class="link-block">
+                                    <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Video</span>
+                                    </a>
+                                </span> -->
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/yjsx/STDArm"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code(Coming soon)</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero teaser ">
+        <div class="container is-max-desktop">
+            <div class="content has-text-centered">
+                <h2 class="title is-3">Overview Video</h2>
+                <!-- invert static/videos/intro.mov -->
+                <video poster="" id="intro" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/demo_zip.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="hero is-light is-small">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                          Recent advances in mobile robotic platforms like quadruped robots and drones have spurred a demand for deploying visuomotor policies in increasingly dynamic environments. However, the collection of high-quality training data, the impact of platform motion and processing delays, and limited onboard computing resources significant barriers to existing solutions. In this work, we present STDArm, a system that directly transfers policies trained under static conditions to dynamic platforms without extensive modifications.
+                          <br>
+                          <br>
+                          The core of STDArm is a real-time action correction framework consisting of: (1) an action manager to boost control frequency and maintain temporal consistency, (2) a stabilizer with a lightweight prediction network to compensate for motion disturbances , and (3) an online latency estimation module for calibrating system parameters. By this way, STDArm achieves centimeter-level precision in mobile manipulation tasks. 
+                          <br>
+                          <br>
+                          We conduct comprehensive evaluations of the proposed STDArm on two types of robotic arms, three types of mobile platforms, and three tasks. Experimental results indicate that the STDArm enables real-time compensation for platform motion disturbances while preserving the original policy's manipulation capabilities, achieving centimeter-level operational precision during robot motion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+
+            <!-- Paper video. -->
+            <!-- Paper video. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <!-- include a figure -->
+                    <figure class="image">
+                        <img src="./static/images/pipeline.png" alt="Pipeline" style="max-width: 100%;">
+                    </figure>
+                    <p>
+                      <strong>Pipeline of STDArm.</strong>
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!--/ Paper video. -->
+        </div>
+    </section>
+
+
+    <section class="hero is-light is-small">
+      <div class="hero-body">
+          <div class="container">
+              <h2 class="title is-3 has-text-centered">Experimental Configurations</h2>
+              <div id="results-carousel" class="carousel results-carousel">
+                  <div class="item item-steve">
+                    <img src="static/images/3dof.png" alt="3dof"/>
+                    <h2 class="subtitle has-text-centered">
+                      Mobile Table <br>with 3-DoF arm.
+                    </h2>
+                      <!-- <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                          <source src="./static/videos/humantrack.mp4" type="video/mp4">
+                      </video> -->
+                  </div>
+                  <div class="item item-steve">
+                    <img src="static/images/5dof.png" alt="5dof"/>
+                    <h2 class="subtitle has-text-centered">
+                      Mobile aluminum frame <br>with 5-DoF arm.
+                    </h2>
+                  </div>
+                  <div class="item item-chair-tp">
+                    <img src="static/images/LS.png" alt="programmable leadscrew"/>
+                      <h2 class="subtitle has-text-centered">
+                        Programmable Leadscrew <br>with 3-DoF arm.
+                    </h2>
+                  </div>
+                  <div class="item item-chair-tp">
+                    <img src="static/images/uav.png" alt="UAV"/>
+                    <h2 class="subtitle has-text-centered">
+                      DJI Matrice 300 <br>with 3-DoF arm.
+                    </h2>
+                  </div>
+                  
+              </div>
+              <!-- <p style="text-align: center;">
+                  Visualization of generated trajectories
+                  <span style="color: darkgoldenrod;">(yellow videos)</span> together with the corresponding diffusion
+                  process
+                  <span style="color: red;">(red videos)</span>.
+              </p> -->
+          </div>
+      </div>
+  </section>
+
+    <section class="hero is-light is-small">
+      <div class="hero-body">
+          <div class="container">
+              <h2 class="title is-3 has-text-centered">Experimental Results</h2>
+              <div id="results-carousel" class="carousel results-carousel">
+                  <div class="item item-steve">
+                      <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                          <source src="./static/videos/1demo.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                  <div class="item item-steve">
+                      <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                          <source src="./static/videos/2demo.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                  <div class="item item-chair-tp">
+                      <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                          <source src="./static/videos/3demo.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                  <div class="item item-chair-tp">
+                      <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                          <source src="./static/videos/4demo.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                  <div class="item item-shiba">
+                      <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                          <source src="./static/videos/5demo.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                  <div class="item item-shiba">
+                      <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                          <source src="./static/videos/6demo.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                  <div class="item item-fullbody">
+                      <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                          <source src="./static/videos/7demo.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                 
+              </div>
+              <!-- <p style="text-align: center;">
+                  Visualization of generated trajectories
+                  <span style="color: darkgoldenrod;">(yellow videos)</span> together with the corresponding diffusion
+                  process
+                  <span style="color: red;">(red videos)</span>.
+              </p> -->
+          </div>
+      </div>
+  </section>
+
+    <!-- Why: explain why model-based diffusion is important -->
+    <!-- 1. generalize beyond the data  with model information -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="content">
+                        <h2 class="title is-3">Why Model-Based Diffusion?</h2>
+                        <!-- MBD is data-free -->
+                        <p>
+                            <b>
+                                MBD doesn’t require external data:
+                            </b>
+                            Diffusion-based planner relies on large-scale and high-quality demonstration data. By
+                            leveraging the model information, MBD is data-free, and can be naturally integrated with
+                            data to steer the diffusion process.
+                        </p>
+                        <!-- MBD delivers good performance in short time -->
+                        <p>
+                            <b>
+                                MBD delivers good performance in short time:
+                            </b>
+                            MBD can generate high-quality motion plans for contact-rich tasks with nonconvex cost
+                            functions within tens of seconds, whose performance is comparable to RL. (Note: MBD vs. RL
+                            is not apple-to-apple. For MBD we just replay the planned actions in an open loop whereas RL
+                            generates a closed-loop policy)
+                            Here are some examples:
+                        </p>
+                        <p>
+                            Interactive trajectories:
+                            <a href="static/html/ant.html">Ant</a>
+                            <a href="static/html/halfcheetah.html">HalfCheetah</a>
+                            <a href="static/html/hopper.html">Hopper</a>
+                            <a href="static/html/walker2d.html">Walker2d</a>
+                            <a href="static/html/pushT.html">PushT</a>
+                            <a href="static/html/humantrack.html">Humanoid Jogging</a>
+                            <a href="static/html/humanstandup.html">Humanoid Standup</a>
+                            <a href="static/html/humanrun.html">Humanoid Run</a>
+                        </p>
+                        <p>
+                            Diffusion process:
+                            <a href="static/html/ant_diffusion.html">Ant</a>
+                            <a href="static/html/halfcheetah_diffusion.html">HalfCheetah</a>
+                            <a href="static/html/hopper_diffusion.html">Hopper</a>
+                            <a href="static/html/walker2d_diffusion.html">Walker2d</a>
+                            <a href="static/html/pushT_diffusion.html">PushT</a>
+                            <a href="static/html/humantrack_diffusion.html">Humanoid Jogging</a>
+                            <a href="static/html/humanstandup_diffusion.html">Humanoid Standup</a>
+                            <a href="static/html/humanrun_diffusion.html">Humanoid Run</a>
+                        </p>
+                        <figure class="image">
+                            <img src="./static/images/results.png" alt="MBD" style="max-width: 100%;">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How: explain how to implement model-based diffusion -->
+    <!-- 1. score function -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="content">
+                        <h2 class="title is-3">How Does Model-Based Diffusion Work?</h2>
+                        <!-- model-based diffusion is a zeroth-order optimization method -->
+                        <p>
+                            <b>
+                                MBD as a zeroth-order optimization method:
+                            </b>
+                            Given an optimization problem (which provides model information), MBD seeks for its global
+                            optimum through the diffusion process.
+                        </p>
+                        <!-- score esitimation -->
+                        <p>
+                            <b>
+                                Score function estimation:
+                            </b>
+                            We propose to compute the score function by leveraging the model information and Monte Carlo
+                            approximation.
+                        </p>
+                        <!-- backward process -->
+                        <p>
+                            <b>
+                                Denoising process:
+                            </b>
+                            We propose Monte Carlo score ascent (MCSA) to replace reverse SDE to run backward process to
+                            achieve faster convergence to the target distribution.
+                        </p>
+                        <!-- include pdf here -->
+                        <figure class="image">
+                            <img src="./static/images/mcsa.png" alt="Model-Based Diffusion" style="max-width: 100%;">
+                            <p>
+                                Reverse SDE vs. Monte Carlo score ascent (MCSA) on a synthetic highly non-convex
+                                objective function. (a) Synthesized objective function with multiple local minima. (b)
+                                The intermediate stage density. (c) Reverse SDE vs. MCSA: Background colors represent
+                                the density at different stages. MCSA converges faster due to larger step size and lower
+                                sampling noise while still capturing the multimodality.
+                            </p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What: explain what is model-based diffusion -->
+    <!-- compare with model-free one -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="content">
+                        <h2 class="title is-3">MBD vs. Model-Free Diffusion</h2>
+                        <!-- compare with model-free diffusion -->
+                        <p>
+                            MBD leverages model information to compute the score function
+                            explicitly, while model-free diffusion learns the score function from data.
+                        </p>
+                        <!-- <figure class="image">
+                            <img src="./static/images/compare.png" alt="MBD"
+                                style="max-width: 100%;">
+                            <p>
+                                MBD leverages model information to compute the score function
+                                explicitly, while model-free diffusion learns the score function from data.
+                            </p>
+                        </figure> -->
+                        <table border="1">
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Model-Based Diffusion (MBD)</th>
+                                <th>Model-Free Diffusion (MFD)</th>
+                            </tr>
+                            <tr>
+                                <td>Target distribution</td>
+                                <td>Known, but hard to sample</td>
+                                <td>Unknown, but have data from it</td>
+                            </tr>
+                            <tr>
+                                <td>Objective</td>
+                                <td>Sample high-likelihood solution</td>
+                                <td>Generate diverse samples</td>
+                            </tr>
+                            <tr>
+                                <td>Score Approximation</td>
+                                <td>From model + data (optional)</td>
+                                <td>From data</td>
+                            </tr>
+                            <tr>
+                                <td>Backward Process</td>
+                                <td>Monte Carlo Score Ascent</td>
+                                <td>Reverse SDE</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>
+            @misc{pan2024modelbaseddiffusiontrajectoryoptimization,
+                title={Model-Based Diffusion for Trajectory Optimization}, 
+                author={Chaoyi Pan and Zeji Yi and Guanya Shi and Guannan Qu},
+                year={2024},
+                eprint={2407.01573},
+                archivePrefix={arXiv},
+                primaryClass={cs.RO},
+                url={https://arxiv.org/abs/2407.01573}, 
+              }
+            </code></pre>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            Template comes from
+                            <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
